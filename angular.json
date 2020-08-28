@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-google-maps-modal"
+    }
+  },
+  "defaultProject": "angular-google-maps-modal",
+  "cli": {
+    "analytics": false
+  }
 }

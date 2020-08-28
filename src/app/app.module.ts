@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GoogleMapsComponent } from './components/google-maps/google-maps.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AgmCoreModule } from '@agm/core';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GoogleMapsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAqCd4Ol_GTX01gGE0DiXNxKwt8EbuMWwk',
+      libraries: ['places']
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
