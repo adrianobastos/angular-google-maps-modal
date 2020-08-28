@@ -18,7 +18,7 @@ import { AgmCoreModule } from '@agm/core';
     AppRoutingModule,
     NgbModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAqCd4Ol_GTX01gGE0DiXNxKwt8EbuMWwk',
+      apiKey: 'YOUR API KEY',
       libraries: ['places']
     })
   ],
